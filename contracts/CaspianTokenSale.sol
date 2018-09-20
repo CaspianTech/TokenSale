@@ -27,7 +27,7 @@ contract CaspianTokenSale is FlexibleTokenSale, CaspianTokenSaleConfig {
    //
    // Events
    //
-   event WhitelistUpdated(address indexed _address, uint256 _phase);
+   event WhitelistUpdated(address indexed _account, uint8 _phase);
 
 
    constructor(address wallet) public

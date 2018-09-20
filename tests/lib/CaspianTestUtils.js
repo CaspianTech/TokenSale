@@ -41,7 +41,7 @@ module.exports.checkUpdateWhitelist = (receipt, address, phase) => {
    assert.equal(typeof receipt.events.WhitelistUpdated, 'object')
    const eventArgs = receipt.events.WhitelistUpdated.returnValues
    assert.equal(Object.keys(eventArgs).length, 4)
-   assert.equal(eventArgs._address, address)
+   assert.equal(eventArgs._account, address)
    assert.equal(eventArgs._phase, phase)
 }
 
@@ -60,7 +60,7 @@ module.exports.checkUpdateWhitelistBatch = (receipt, addresses, phase) => {
 
       assert.equal(e.event, 'WhitelistUpdated')
       assert.equal(Object.keys(e.returnValues).length, 4)
-      assert.equal(e.returnValues._address, addresses[i])
+      assert.equal(e.returnValues._account, addresses[i])
       assert.equal(e.returnValues._phase, phase)
    }
 }

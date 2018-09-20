@@ -40,7 +40,7 @@ describe('CaspianToken Contract', () => {
    const TOKEN_SYMBOL        = "CSP"
    const TOKEN_DECIMALS      = 18
    const DECIMALS_FACTOR     = new BigNumber(10).pow(TOKEN_DECIMALS)
-   const TOKEN_TOTALSUPPLY   = new BigNumber("900000000").times(DECIMALS_FACTOR)
+   const TOKEN_TOTALSUPPLY   = new BigNumber("1000000000").times(DECIMALS_FACTOR)
 
 
    var token = null

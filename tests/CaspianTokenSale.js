@@ -73,14 +73,14 @@ describe('CaspianTokenSale Contract', () => {
    const TOKEN_SYMBOL        = "CSP"
    const TOKEN_DECIMALS      = 18
    const DECIMALS_FACTOR     = new BigNumber(10).pow(TOKEN_DECIMALS)
-   const TOKEN_TOTALSUPPLY   = new BigNumber("900000000").times(DECIMALS_FACTOR)
+   const TOKEN_TOTALSUPPLY   = new BigNumber("1000000000").times(DECIMALS_FACTOR)
 
    const TOKENSPERKETHER     = 4000000
    const BONUS               = new BigNumber(0)
-   const MAXTOKENSPERACCOUNT = new BigNumber("4000").times(DECIMALS_FACTOR)
-   const CONTRIBUTION_MIN    = new BigNumber(0.1).times(DECIMALS_FACTOR)
-   const START_TIME          = 1530100800
-   const END_TIME            = 1530273600
+   const MAXTOKENSPERACCOUNT = new BigNumber("400000").times(DECIMALS_FACTOR)
+   const CONTRIBUTION_MIN    = new BigNumber(0.5).times(DECIMALS_FACTOR)
+   const START_TIME          = 1538553600
+   const END_TIME            = 1538726400
 
 
    var sale = null

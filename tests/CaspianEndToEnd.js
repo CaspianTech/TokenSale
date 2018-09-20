@@ -48,18 +48,18 @@ describe('Caspian End-To-End Scenario', () => {
    const TOKEN_SYMBOL          = "CSP"
    const TOKEN_DECIMALS        = 18
    const DECIMALS_FACTOR       = new BigNumber(10).pow(TOKEN_DECIMALS)
-   const TOKEN_TOTALSUPPLY     = new BigNumber("900000000").times(DECIMALS_FACTOR)
+   const TOKEN_TOTALSUPPLY     = new BigNumber("1000000000").times(DECIMALS_FACTOR)
 
-   const CONTRIBUTION_MIN      = new BigNumber(0.1).times(DECIMALS_FACTOR)
+   const CONTRIBUTION_MIN      = new BigNumber(0.5).times(DECIMALS_FACTOR)
 
 
    // Sale configuration
    const SALE_TOKENS              = new BigNumber("85000000").times(DECIMALS_FACTOR)
    const SALE_TOKENSPERKETHER     = 4000000
    const SALE_BONUS               = 0
-   const SALE_MAXTOKENSPERACCOUNT = new BigNumber(4000).times(DECIMALS_FACTOR)
-   const SALE_STARTTIME           = 1530100800
-   const SALE_ENDTIME             = 1530273600
+   const SALE_MAXTOKENSPERACCOUNT = new BigNumber(400000).times(DECIMALS_FACTOR)
+   const SALE_STARTTIME           = 1538553600
+   const SALE_ENDTIME             = 1538726400
 
 
    var sale = null
